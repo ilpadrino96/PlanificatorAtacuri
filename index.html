@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificator Atac</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Planificator Atac</h1>
+        <form id="attackForm">
+            <label for="target">Ținta:</label>
+            <input type="text" id="target" name="target" required>
+
+            <label for="arriveAt">Ajunge la:</label>
+            <input type="datetime-local" id="arriveAt" name="arriveAt" required>
+
+            <label for="startTime">Timp de lansare (început):</label>
+            <input type="datetime-local" id="startTime" name="startTime" required>
+
+            <label for="endTime">Timp de lansare (sfârșit):</label>
+            <input type="datetime-local" id="endTime" name="endTime" required>
+
+            <label for="attacker">Atacator:</label>
+            <input type="text" id="attacker" name="attacker" required>
+
+            <label for="units">Unități (de exemplu, Ram, Nobleman):</label>
+            <textarea id="units" name="units" rows="4" required></textarea>
+
+            <button type="submit">Generează Planul</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
