@@ -10,12 +10,19 @@
     <div class="container">
         <h1>Planificator Atac - Tribal Wars</h1>
         <form id="attackForm">
-            <label for="attacker">Atacator:</label>
-            <input type="text" id="attacker" name="attacker" required>
+            <!-- Dropdown pentru alegerea atacatorului -->
+            <label for="attacker">Selectează atacatorul:</label>
+            <select id="attacker" name="attacker" required>
+                <option value="">Alege atacatorul</option>
+            </select>
 
-            <label for="attackerCoords">Coordonatele atacatorului:</label>
-            <input type="text" id="attackerCoords" name="attackerCoords" placeholder="Ex: 123|456" required>
+            <!-- Dropdown pentru alegerea satului atacatorului -->
+            <label for="attackerVillage">Selectează satul atacatorului:</label>
+            <select id="attackerVillage" name="attackerVillage" required>
+                <option value="">Alege satul</option>
+            </select>
 
+            <!-- Restul câmpurilor -->
             <label for="targetCoords">Coordonatele țintei:</label>
             <input type="text" id="targetCoords" name="targetCoords" placeholder="Ex: 654|321" required>
 
